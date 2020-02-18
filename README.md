@@ -1,11 +1,9 @@
 
-# Data Ingestion Example
-
-[[DESCRIPTION OF PROJECT]]
+# Genetics Project
 
 ## Usage Instructions
 
-* Description of targets and using `run.py`
+* run.py reads a VCF file, runs PCA on the variants, then plots the eigenvector values with matplotlib.
 
 ## Description of Contents
 
@@ -36,15 +34,13 @@ PROJECT
 
 ### `src`
 
-* `etl.py`: Library code that executes tasks useful for getting data.
+* `data_ingest.sh`: Read VCF file with parameters 
+* `process.sh`: Run plink2 PCA function on VCF file
 
 ### `config`
 
-* `data-params.json`: Common parameters for getting data, serving as
-  inputs to library code.
-  
-* `test-params.json`: parameters for running small process on small
-  test data.
+* `config.json`: Parameters for run.py
+ 
 
 ### `references`
 
@@ -52,6 +48,4 @@ PROJECT
 
 ### `notebooks`
 
-* Jupyter notebooks for *analyses*
-  - notebooks are not for data processing; they should import code
-    from `src`.
+* Work for A2.
