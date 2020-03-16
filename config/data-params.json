@@ -1,0 +1,8 @@
+{
+    "fasta-path": "/datasets/dsc180a-wi20-public/Genome/resources/hg38",
+    "fastq-path": "/datasets/dsc180a-wi20-public/Genome/fastq/testfile/SP1.fq",
+    "vcf-paths": ["ALL.chr1.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf.gz",
+                  "ALL.chr2.shapeit2_integrated_v1a.GRCh38.20181129.phased.vcf.gz"],
+    "renames": ["chr1_filtered.vcf", "chr2_filtered.vcf"],
+    "imterim-path": "interim"
+}

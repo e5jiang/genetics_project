@@ -3,49 +3,25 @@
 
 ## Usage Instructions
 
-* run.py reads a VCF file, runs PCA on the variants, then plots the eigenvector values with matplotlib.
+* run.py reads a FASTQ file, converts it to VCF, runs PCA on the variants, then plots the eigenvector values with seaborn.
 
-## Description of Contents
-
-The project consists of these portions:
-```
-PROJECT
-├── .env
-├── .gitignore
-├── README.md
-├── config
-│   ├── data-params.json
-│   └── test-params.json
-├── data
-│   ├── log
-│   ├── out
-│   ├── raw
-│   └── temp
-├── lib
-├── notebooks
-│   └── .gitkeep
-├── references
-│   └── .gitkeep
-├── requirements.txt
-├── run.py
-└── src
-    └── etl.py
-```
-
-### `src`
-
-* `data_ingest.sh`: Read VCF file with parameters 
-* `process.sh`: Run plink2 PCA function on VCF file
+## Description of Content
 
 ### `config`
 
-* `config.json`: Parameters for run.py
- 
-
-### `references`
-
-* Data Dictionaries, references to external sources
+* `data-params.json`: Parameters for run.py
+* `env.json`: docker image path and output path
 
 ### `notebooks`
 
-* Work for A2.
+* Work for A3.
+
+### `test-project`
+
+* `filter_vcf.sh`: filter vcf with parameters
+* `fq_to_vcf.sh`: convert FASTQ to VCF format
+* `vcf_to_pca.sh`: run PLINK2 PCA function
+
+### `etl.py`: functions for the code
+
+### `run.py`: code to run pipeline
