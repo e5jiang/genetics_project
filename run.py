@@ -5,11 +5,10 @@ from etl import *
 
 if __name__ == "__main__":
     args = sys.argv
-    env = json.load(open('../config/env.json'))
-    
-    os.chdir(args[1])
+    env = json.load(open('config/env.json'))
+    data_params = json.load(open('config/data-params.json'))
 
-    data_params = json.load(open('../config/data-params.json'))
+    os.chdir(args[1])
 
     chmod_files()
 
