@@ -6,7 +6,6 @@ from etl import *
 if __name__ == "__main__":
     args = sys.argv
     env = json.load(open('config/env.json'))
-    os.system(env['docker-image'])
     
     os.chdir(args[0])
 
