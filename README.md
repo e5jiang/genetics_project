@@ -22,6 +22,8 @@
 * `fq_to_vcf.sh`: convert FASTQ to VCF format
 * `vcf_to_pca.sh`: run PLINK2 PCA function
 
-### `etl.py`: functions for the code
+### `etl.py`
+* functions for the code
 
-### `run.py`: code to run pipeline
+### `run.py`
+* code to run pipeline
