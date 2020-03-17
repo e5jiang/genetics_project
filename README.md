@@ -5,12 +5,13 @@
 
 * run.py reads a FASTQ file, converts it to VCF, runs PCA on the variants, then plots the eigenvector values with seaborn.
 * Code will create 'interim' and 'outputs' directories in the 'test-project' folder, where intermediate and output files of the code will go. 
+* NOTE: in `env.json` the `docker-image` there are double quotes around `latest`, but they are escaped characters in the json format. Please note if copy-pasting. 
 
 ## Description of Content
 
 ### `config`
 
-* `data-params.json`: Parameters for run.py
+* `data-params.json`: Parameters for run.py 
 * `env.json`: docker image path and output path
 
 ### `notebooks`
