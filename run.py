@@ -1,6 +1,6 @@
 import json
 import sys
-from etl import *
+from src.etl import *
 
 
 if __name__ == "__main__":
