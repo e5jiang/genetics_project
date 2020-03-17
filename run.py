@@ -19,12 +19,12 @@ if __name__ == "__main__":
     
     plot_pca()
 
-    with open("env.json", "r") as f:
+    with open("config/env.json", "r") as f:
         env = json.load(f)
 
     env['output-paths'] = ['test-project/outputs/SP1.vcf.gz', 'test-project/outputs/pca.png']
 
-    with open("env.json", "w") as f:
+    with open("config/env.json", "w") as f:
         json.dump(env, f)
 
 
