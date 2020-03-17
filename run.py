@@ -5,7 +5,6 @@ from etl import *
 
 if __name__ == "__main__":
     args = sys.argv
-    env = json.load(open('config/env.json'))
     data_params = json.load(open('config/data-params.json'))
 
     os.chdir(args[1])
@@ -18,5 +17,15 @@ if __name__ == "__main__":
 
     build_pca(data_params)
     
-    plot_pca(env)
+    plot_pca()
+
+    with open("env.json", "r") as f:
+        env = json.load(f)
+
+    env['output-paths'] = ['test-project/outputs/SP1.vcf.gz', 'test-project/outputs/pca.png']
+
+    with open("env.json", "w") as f:
+        json.dump(env, f)
+
+
 
