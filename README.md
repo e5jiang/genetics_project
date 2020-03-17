@@ -4,6 +4,7 @@
 ## Usage Instructions
 
 * run.py reads a FASTQ file, converts it to VCF, runs PCA on the variants, then plots the eigenvector values with seaborn.
+* Code will create 'interim' and 'outputs' directories in the 'test-project' folder, where intermediate and output files of the code will go. 
 
 ## Description of Content
 
