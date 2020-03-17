@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     chmod_files()
 
-    build_vcf(data_params, env)
+    build_vcf(data_params)
 
     filter_rename(data_params)
 

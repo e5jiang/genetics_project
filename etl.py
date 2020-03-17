@@ -8,7 +8,7 @@ def chmod_files():
     os.system('chmod 700 filter_vcf.sh')
     os.system('chmod 700 vcf_to_pca.sh')
 
-def build_vcf(params, env):
+def build_vcf(params):
     os.system('./fq_to_vcf.sh '+params['fasta-path']+' '+params['fastq-path']+' '+params['imterim-path']+' outputs')
 
 def filter_rename(params):
